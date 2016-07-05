@@ -1,0 +1,131 @@
+body{
+    padding-top: 144px;
+}
+.hero-block{
+    background:url('../img/melbourne.jpg')center no-repeat;
+    height: 300px;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+}
+.hero-block .overlay{
+    background: rgba(0,0,0,0.3);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 100%;
+    height:100%;
+    margin-left: -15px;
+    margin-right: -15px;
+    transition: background 0.25s ease-out;
+}
+.hero-block .hello{
+    font-size: 5em;
+    padding: 0px 50px;
+    text-align: center;
+    position: relative;
+}
+.hero-block.active .overlay{
+    /*background: rgba(0,0,0,0.5)*/
+}
+.hero-block .tab-bar{
+    position: absolute;
+    bottom: 0;
+    height: 0px;
+    background: #00BF71;
+    width: 100%;
+    margin-left: -15px;
+    transition: height 0.2s ease-out;
+}
+.hero-block.active .tab-bar{
+    height: 12px;
+}
+.wrapper .content {
+    margin: 0;
+    padding: 30px 12px;
+}
+.wrapper .title{
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 0;
+}
+.about-details{
+    border-bottom: 1px solid #d8d8d8
+}
+.column-left{
+    border-right: 1px solid #d8d8d8
+}
+.column-right{
+    border-left: 1px solid #d8d8d8
+}
+.director{
+    text-align: center;
+}
+.message{
+    padding-top: 30px !important
+}
+.director .name{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.director .pos{
+    font-size: 1.3em;
+}
+.wrapper.bg{
+    background: #fcfcfc
+}
+.director-info{
+    padding: 25px 15px;
+    padding-left: 30px
+}
+.director-content{
+    padding: 40px 15px;
+}
+
+
+@media (max-width: 1200px) {
+    .wrapper.bg {
+        border-bottom: 1px solid #d8d8d8
+    }
+    .director-info img{
+        margin: 0 auto;
+        margin-bottom: 12px;
+    }
+    .director-content{
+        padding: 75px 15px;
+    }
+    .director-content .content{
+        border-bottom: none !important;
+    }
+    .message{
+        padding: 40px 15px !important
+    }
+}
+@media (max-width: 768px) {
+    body{
+        padding-top: 117px
+    }
+    .hero-block .hello,.hero-block .msg{
+        padding: 0px;
+    }
+    .hero-block .msg{
+        font-size: 1.8em;
+        margin-top: 10px
+    }
+    .hero-block .hello{
+        font-size: 4em;
+    }
+    .hero-block{
+        height: 400px
+    }
+     .director-content{
+        padding: 15px 15px;
+    }
+}
+
+@media (min-width:768px) and (max-width: 880px) {
+    .director-info{
+        padding: 57px 15px;
+    }
+}

@@ -1,0 +1,403 @@
+@font-face {
+    font-family: circularBook;
+    src: url(../font/CircularStd-Book.otf);
+}
+
+html,body,.full-height{
+    height: 100%;
+    font-family: circularBook;
+    font-size: 11px;
+}
+.full-height{
+    height: 100%;
+}
+@media (max-width: 768px) {
+    body{
+        font-size: 8px !important;
+    }
+}
+
+a,a:focus,a:visited{
+    outline: none !important;
+    text-decoration: none;
+}
+.sidebar{
+    width: 30%;
+    float: left;
+    background: #F9F9F9;
+    background: #Fff;
+    position: relative;
+    position: fixed;
+    z-index: 10;
+    border-right: 1px solid #ddd;
+    min-height: 670px;
+    top: 0;
+}
+.content-panel{
+    width: 70%;
+    float: left;
+    margin-left: 30%
+}
+.sidebar .brand{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-height: 150px;
+}
+.sidebar .brand img{
+    max-height: 120px;
+    margin: 0 auto;
+}
+.sidebar .description{
+    /*margin-top: 15px;*/
+    /*margin-bottom:30px;*/
+    font-size: 1.3em;
+    text-align: center;
+    padding: 15px 30px;
+}
+.menus{
+    padding: 0;
+}
+.menus ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menus ul li{
+    font-size: 1.6em;
+    text-align: center;
+    cursor: pointer;
+}
+.menus ul li a{
+    padding: 17px;
+    display: block;
+    position: relative;
+    transition:background 0.2s ease-in;
+    color: #1745D0
+}
+.menus ul li a:hover,.menus ul li.active a{
+    text-decoration: none;
+    background: #F9F9F9;
+    color: #1745D0
+}
+.menus ul li a:hover:after,.menus ul li a:hover:before,.menus ul li.active a:after,.menus ul li.active a:before{
+    transform: scaleX(0.6);
+}
+.menus ul li a:before{
+    display: block;
+    width: 50%;
+    height:1px;
+    background: #1745D0;
+    content:'';
+    position: absolute;
+    top:30px;
+    left: 25%;
+    transform: scaleX(0);
+    transform-origin: 50%;
+    transition: transform 0.3s ease-out;
+    opacity: 0.6
+}
+/*.menus ul li:nth-child(3) a:before{
+    height: 2px;
+    background: red;
+}*/
+.fixed-top{
+    position: fixed;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width:100%;
+    z-index: 100;
+}
+.fixed-top.opaq{
+    background: rgba(0,0,0,0.2)
+}
+.fixed-top.full-height{
+    background: rgba(0,0,0,0.3);
+}
+.fixed-top.inverse .wrap{
+    background: #fff;
+    color: #333;
+}
+.fixed-top .logo{
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 21px !important;
+}
+.fixed-top .wrap{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 2em;
+}
+.fixed-top .bar{
+    display: inline-block;
+    margin-right: 0px;
+    position: relative;
+    top: 35px;
+}
+.fixed-top .bar span{
+    background: #fff;
+    display: block;
+    height: 3px;
+    width: 26px;
+    margin-bottom: 5px;
+}
+.fixed-top.inverse .bar span{
+    background: #333;
+}
+.fixed-top .menu-wrap{
+    display: none;
+}
+
+.footer{
+/*    position: absolute;
+    bottom: 0;*/
+    width: 100%;
+}
+.footer .copyright,.xs-footer .copyright{
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.footer .contact,.xs-footer .contact{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: rgba(0,0,0,0.05);
+    font-size: 1.16em;
+    text-align: center
+}
+.footer .fb{
+    padding:12px 15px;
+    text-align: center;
+}
+.footer .fb a span{
+    float: left;
+    font-size: 1.8em;
+    position: relative;
+    top: -8px;
+    padding-right: 19px;
+    border-right: 1px solid rgba(0,0,0,0.2)
+}
+.footer .fb a{
+    padding: 12px 18px;
+    color: #fff;
+    background: #3b5998;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    font-size: 1.3em;
+    border: 1px solid rgba(0,0,0,0.06)
+}
+.footer .fb a:hover,.fbbb a:hover{
+    background: #304D8A;
+    cursor: pointer;
+    text-decoration: none;
+}
+.xs-footer .fb{
+    background: rgba(0,0,0,0.1);
+    padding:6px 0px;
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: bold;
+    color: #fff;
+     background: #3b5998;
+}
+
+
+/*carousal start*/
+.carousel .item-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    background: url('../img/black20.png');
+}
+.carousel .item.business{
+    background-image: url('../img/business.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.carousel .item.travel{
+    background-image: url('../img/travel.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.carousel .item.education{
+    background-image: url('../img/education.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.carousel-indicators{
+    margin-bottom: 0px;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+}
+.carousel-indicators li,.carousel-indicators li.active{
+    border-radius: 0px;
+    display: block;
+    float: left;
+    border: 0;
+    background: rgba(256,256,256,0.4);
+    background: rgba(0,0,0,0.4);
+    margin: 0;
+    height: 10px;
+    width: calc( 100% / 3 );
+}
+.carousel-indicators li.active{
+    background: rgba(256,256,256,0.8);
+    background: rgba(0,0,0,0.8);
+}
+.carousel-container{
+    padding: 0;
+    position:relative;
+}
+/* Carousal End */
+
+/*Menu start*/
+.table-div{
+    position:absolute;
+    display: table;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+.table-cell{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+.table-cell.bottom{
+    vertical-align: bottom;
+}
+/*Menu end*/
+.experience{
+    border-bottom:2px solid #ccc;
+    overflow: hidden;
+    background:url('../img/banner2.jpg') center;
+}
+.wrapper .content{
+    margin-bottom: 2%;
+    margin-top:2%;
+    font-size:2em;
+    padding: 0px 12px
+}
+.wrapper .title{
+    font-size: 2.8em;
+    background: #fff;
+    color:#1BAD71;
+    padding:20px 15px;
+    text-align: center;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 10px;
+}
+.wrapper.contact{
+    background: #f7f7f7;
+    padding: 20px 15px;
+    border-top: 1px solid #d8d8d8;
+}
+.btn-cies{
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    position: relative;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.btn-cies-primary{
+    background: #1BAD71;
+    color: #fff;
+    /*margin-top: -10px;*/
+    /*border-radius: 30px*/
+}
+.wrapper.contact a.btn-cies{
+    display: inline-block;
+    margin-top: 15px;
+}
+.wrapper.contact a.btn-cies:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.service-block .education,.service-block .student-visa,.service-block .business-visa,.service-block .employer{
+    height: 100%;
+    padding: 0;
+    cursor: pointer;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.service-block .education{
+    background-image: url('../img/service1.jpg');
+}
+.service-block .student-visa{
+    background-image: url('../img/service2.jpg');
+}
+.service-block .business-visa{
+    background-image: url('../img/service3.jpg');
+}
+.service-block .employer{
+    background-image: url('../img/service4.jpg');
+}
+.service-block .education > div,.service-block .student-visa > div,.service-block .business-visa > div,.service-block .employer > div{
+    background: rgba(0,0,0,0.2);
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+.service-block .service-title{
+    display: table-cell;
+    width: 100%;
+    /*border: 3px solid #fff;*/
+    font-size: 2.2em;
+    color: #fff;
+    height: 100%;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: middle;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+    transition: background 0.4s ease-out,font-size 0.25s ease-in;
+}
+.service-block .service-title:hover{
+    background: rgba(0,0,0,0.6);
+    font-size: 2.4em;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar{
+        display: none;
+    }
+    .content-panel{
+        width: 100%;
+        float: left;
+        margin-left: 0;
+    }
+    .carousel .item-overlay{
+        background: rgba(0,0,0,0.25);
+    }
+    .menus ul li{
+        font-size: 1em;
+    }
+    .menus ul li a:before{
+        top:35px;
+        width:75%;
+        left:12.5%;
+    }
+    .fixed-top{
+        display: block !important;
+    }
+    .wrapper.contact{
+        text-align: center;
+        border-bottom: 1px solid #d8d8d8;
+    }
+    .wrapper.contact .btn-cies{
+        float: none !important;
+        width: 40%;
+    }
+    .xs-footer{
+        display: block;
+    }
+}

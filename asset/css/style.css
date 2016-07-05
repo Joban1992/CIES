@@ -1,0 +1,249 @@
+@font-face {
+    font-family: circularBook;
+    src: url(../font/CircularStd-Book.otf);
+}
+
+html,body,.full-height{
+    height: 100%;
+    font-family: circularBook;
+}
+
+
+/*carousal start*/
+.carousel .item-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    background: url('../img/black20.png');
+}
+.carousel .item.business{
+    background-image: url('../img/business.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.carousel .item.travel{
+    background-image: url('../img/travel.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.carousel .item.education{
+    background-image: url('../img/education.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.carousel-indicators{
+    margin-bottom: 0px;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+}
+.carousel-indicators li,.carousel-indicators li.active{
+    border-radius: 0px;
+    display: block;
+    float: left;
+    border: 0;
+    background: rgba(256,256,256,0.4);
+    background: rgba(0,0,0,0.4);
+    margin: 0;
+    height: 10px;
+    width: calc( 100% / 3 );
+}
+.carousel-indicators li.active{
+    background: rgba(256,256,256,0.8);
+    background: rgba(0,0,0,0.8);
+}
+.carousel-container{
+    padding: 0;
+    position:relative;
+}
+/* Carousal End */
+
+/*Menu start*/
+.table-div{
+    position:absolute;
+    display: table;
+    height: 100%;
+    width: 400px;
+    top: 0;
+}
+.table-cell{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+.menu-wrap{
+    /*position:absolute;*/
+    /*top: 30%;*/
+    width: 400px;
+}
+.menu-wrap .brand .logo{
+    padding:33px  15px;
+    text-align: center;
+    background: #fff;
+}
+.menu-wrap .brand .logo img{
+    width: 300px;
+}
+.menu-wrap .btn-menu{
+    text-align: center;
+    padding: 15px;
+    background: #2D66AD;
+    border-top: 1px solid #d8d8d8;
+    cursor: pointer;
+    transition: background 0.1s ease-out;
+}
+.menu-wrap .btn-menu:hover{
+    background: #1B5AA9;
+}
+.menu-wrap .btn-menu div{
+    margin: 0 auto;
+    display: inline-block;
+}
+.menu-wrap .btn-menu .bar{
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    top: 6px;
+}
+.menu-wrap .btn-menu .mnu-label{
+    position: relative;
+    top: -3px;
+    font-size: 1.5em;
+    color: #636363;
+    color: #fff;
+}
+.menu-wrap .btn-menu .bar span{
+    background: #ccc;
+    background: #fff;
+    display: block;
+    height: 4px;
+    width: 30px;
+    margin-bottom: 5px;
+}
+.menu-wrap .menu-items ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu-wrap .menu-items{
+    display: none;
+}
+.menu-wrap .menu-items ul li{
+    text-align: center;
+    font-size: 1.5em;
+    overflow: hidden;
+    position: relative;
+}
+.menu-wrap .menu-items ul li div{
+    background: #fff;
+    padding:15px 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.menu-wrap .menu-items ul li div.up,.menu-wrap .menu-items ul li:hover div.low{
+    transform: translateY(0%) rotateX(0deg);
+}
+.menu-wrap .menu-items ul li:hover div.up{
+    transform: translateY(-50%) rotateX(-90deg);
+}
+.menu-wrap .menu-items ul li div.low{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    color: #fff;
+    background: #1BAD71;
+    transform: translateY(50%) rotateX(90deg);
+}
+.menu-wrap .menu-items ul li div.low:hover{
+    color: #fff;
+    background: #1BAD71;
+}
+/*Menu end*/
+
+
+.experience{
+    border-bottom:2px solid #ccc;
+    overflow: hidden;
+    background:url('../img/banner2.jpg') center;
+}
+.wrapper .content{
+    margin-bottom: 2%;
+    margin-top:2%;
+    font-size:2em;
+    padding: 0px 12px
+}
+.wrapper .title{
+    font-size: 2.8em;
+    background: #fff;
+    color:#1BAD71;
+    padding:20px 15px;
+    text-align: center;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 10px;
+}
+
+.service-block{
+    height: 350px;
+}
+.service-block .education,.service-block .student-visa,.service-block .business-visa,.service-block .employer{
+    height: 100%;
+    padding: 0;
+    cursor: pointer;
+}
+.service-block .education{
+    background: url('../img/service1.jpg')  no-repeat;
+    background-size: cover;
+}
+.service-block .student-visa{
+    background: url('../img/service2.jpg') no-repeat;
+    background-size: cover;
+}
+.service-block .business-visa{
+    background: url('../img/service3.jpg') no-repeat;
+    background-size: cover;
+}
+.service-block .employer{
+    background: url('../img/service4.jpg') no-repeat;
+    background-size: cover;
+}
+.service-block .education > div,.service-block .student-visa > div,.service-block .business-visa > div,.service-block .employer > div{
+    background: rgba(0,0,0,0.2);
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+.service-block .service-title{
+    display: table-cell;
+    width: 100%;
+    /*border: 3px solid #fff;*/
+    font-size: 2.2em;
+    color: #fff;
+    height: 100%;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: middle;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+    transition: background 0.4s ease-out,font-size 0.25s ease-in;
+}
+.service-block .service-title:hover{
+    background: rgba(0,0,0,0.6);
+    font-size: 2.4em;
+}
+
+
+
+footer{
+    background: #324C6D;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.2em;
+    /*margin-top: 160px;*/
+}
+
+
+
+
+

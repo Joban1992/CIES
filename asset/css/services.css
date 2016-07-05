@@ -1,0 +1,166 @@
+body{
+    padding-top: 144px;
+}
+.hero-block{
+    background:url('../img/somos.jpg')center no-repeat;
+    height: 600px;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+.hero-block .overlay,.service .overlay,.service .overlay-2{
+    background: rgba(0,0,0,0.4);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 100%;
+    height:100%;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.hero-block .hello{
+    font-size: 8em;
+    padding: 0px 50px;
+    margin-bottom: 20px;
+    text-align: center
+}
+.hero-block .msg{
+    padding: 0px 50px;
+    font-size: 2.2em;
+    text-align: center
+}
+
+.service{
+    padding: 4.1% 50px;
+    min-height: 500px;
+    position: relative;
+}
+.service .overlay,.service .overlay-2{
+    margin-left: -50px;
+    background: rgba(0,0,0,0.2)
+}
+.service .overlay-2{
+    background: red;
+    background: -moz-linear-gradient(45deg, rgba(24,173,113,0.3) 0%, rgba(11,149,120,0.5) 30%, rgba(0,128,128,0) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(24,173,113,0.3)), color-stop(30%, rgba(11,149,120,0.5)), color-stop(100%, rgba(0,128,128,0))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(45deg, rgba(24,173,113,0.3) 0%, rgba(11,149,120,0.5) 30%, rgba(0,128,128,0) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(45deg, rgba(24,173,113,0.3) 0%, rgba(11,149,120,0.5) 30%, rgba(0,128,128,0) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(45deg, rgba(24,173,113,0.3) 0%, rgba(11,149,120,0.5) 30%, rgba(0,128,128,0) 100%); /* ie10+ */
+    background: linear-gradient(45deg, rgba(24,173,113,0.3) 0%, rgba(11,149,120,0.5) 30%, rgba(0,128,128,0) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#18AD71',GradientType=1 ); /* ie6-9 */
+}
+.service.education{
+    background: url('../img/service1.jpg') center no-repeat;
+    background-size: cover;
+}
+.service.ohsc{
+    background: url('../img/healthcover.jpg') no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: top;
+}
+.service.migration{
+    background: url('../img/migration.jpg') no-repeat;
+    background-size: cover;
+    background-position-x: top;
+    background-position-y: 30%;
+}
+.service.profession{
+    background: url('../img/professional.jpg') no-repeat;
+    background-size: cover;
+}
+.service .title{
+    font-size: 5.2em;
+    margin-bottom: 22px;
+    color:#fff;
+}
+.service .description{
+    color: #fff;
+    font-size: 2em;
+}
+.service .description .continue{
+    padding-left: 20px
+}
+.service .description .feature,.service .description .feature-2{
+    font-size: 1.8em;
+    margin-top: 2%;
+    margin-bottom: 15px;
+}
+.service .description .feature-2{
+    font-size: 1.4em;
+}
+.service .description ul{
+    padding: 0;
+    margin:25px 20px;
+}
+.service .description ul li{
+    list-style: none;
+    font-size: 1.3em;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 30px
+}
+.service .description ul li:before{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 40px;
+    background: #fff;
+    position: absolute;
+    top: 20px;
+    left: -30px;
+}
+
+@media (max-width: 768px) {
+    body{
+        padding-top: 117px
+    }
+    body.smallHeader{
+        padding-top: 77px
+    }
+    .hero-block{
+        height:485px;
+    }
+    .hero-block .hello,.hero-block .msg{
+        padding: 0px;
+    }
+    .hero-block .hello{
+        font-size: 4.4em;
+    }
+    .hero-block .msg{
+        font-size: 1.4em;
+        margin-top: 10px
+    }
+    .service{
+        padding: 9% 0px;
+    }
+    .service .overlay,.service .overlay-2{
+        margin-left: 0px;
+    }
+    .service .description ul li:before{
+        width: 25px;
+        left:-15px;
+        top:14px;
+    }
+    .service .title{
+        font-size:4em;
+        margin-bottom: 9px;
+    }
+    .service .description .feature,.service .description .feature-2{
+        font-size: 1.55em;
+        margin-top: 6%;
+        margin-bottom: 9px;
+    }
+    .service .description .feature-2 {
+        font-size: 1.2em;
+    }
+    .wrapper .content {
+        padding: 12px;
+    }
+    .service .description ul li {
+        font-size: 1.1em;
+        margin-bottom: 4px;
+        padding-left: 22px;
+    }
+}

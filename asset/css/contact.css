@@ -1,0 +1,122 @@
+body{
+    padding-top: 144px;
+}
+.hero-block{
+    background:url('../img/somos.jpg') center no-repeat;
+    height: 600px;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+.hero-block .overlay{
+    background: rgba(0,0,0,0.4);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 100%;
+    height:100%;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.hero-block .hello{
+    font-size: 5em;
+    padding: 0px 50px;
+}
+.hero-block .msg{
+    padding: 0px 50px;
+    font-size: 2.2em;
+}
+.email-us{
+   padding-left: 50px;
+}
+.email-us > div{
+    background: #fff;
+    border: 1px solid #d7d7d7;
+    height: 100px;
+}
+.contact-details{
+    background: url('../img/map.png') center no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid #d6d6d6
+}
+.contact-details > .row{
+    background: rgba(256,256,256,0.85);
+    padding-top: 35px;
+    padding-bottom: 50px;
+}
+.contact-details .title{
+    padding: 15px 0px;
+    font-size: 2.5em;
+    color:#1BAD71;
+}
+.contact-details .title span.glyphicon{
+    background: #1BAD71;
+    color: #fff;
+    padding: 9px 12px 12px 10px;
+    border-radius: 100%;
+    margin-right: 15px;
+    position: relative;
+    top: 4px;
+}
+
+.contact-details .details{
+    font-size: 1.7em;
+    padding-left: 70px;
+    
+}
+.wrapper .content{
+    margin-top: 0px;
+}
+.wrapper .content{
+    text-align: center;
+}
+.wrapper .content textarea,.wrapper .content input[type="text"]{
+    width: 100%;
+    border: 1px solid #dadada;
+    resize: none;
+    padding: 12px;
+    color: #686868;
+    margin-bottom: 15px
+}
+.wrapper .content textarea{
+    margin-bottom: 0
+}
+.wrapper .content textarea:focus,.wrapper .content input[type="text"]:focus{
+    outline: none !important;
+    border: 1px solid #649FE8;
+}
+.wrapper .content .btn-cies{
+    font-size: 0.9em;
+    margin-top: 18px;
+    margin-bottom: 32px;
+    width: 200px
+}
+
+@media (max-width: 768px) {
+    body{
+        padding-top: 117px
+    }
+    .wrapper .content .btn-cies{
+        float: none !important;
+        margin-bottom: 15px
+    }
+    .contact-details .details{
+        padding-left: 60px;
+    }
+    .hero-block .hello,.hero-block .msg{
+        padding: 0px;
+    }
+    .hero-block .msg{
+        font-size: 1.8em;
+        margin-top: 10px
+    }
+    .contact-details > .row{
+        padding-top: 10px;
+        padding-bottom: 25px;
+    }
+    .hero-block{
+        height:490px;
+    }
+    
+}
