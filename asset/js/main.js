@@ -50,5 +50,26 @@ $(function() {
 //        });
         var data = $(this).attr("data-redirect");
         window.location = data;
-    })
+    });
+    
+     $('.accordian .acc-title').click(function() {
+                    if (!$(this).parent().hasClass('active')) {
+                        $('.accordian .panel').each(function() {
+                            $(this).removeClass('active');
+                            $(this).find('.acc-content').slideUp(400);
+                        });
+                        $(this).parent().addClass('active');
+                        $(this).next().slideDown(400);
+                    } else {
+                        $(this).parent().removeClass('active');
+                        $(this).next().slideUp(400);
+                    }
+                });
+                $(".hero-block").click(function() {
+                    $(".hero-block").each(function() {
+                        $(this).removeClass('active');
+                    });
+                    $(this).addClass("active");
+                });
+            });
 });
