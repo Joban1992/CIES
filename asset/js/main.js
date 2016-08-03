@@ -71,5 +71,4 @@ $(function() {
                     });
                     $(this).addClass("active");
                 });
-            });
 });
