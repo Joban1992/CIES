@@ -85,7 +85,9 @@ body{
 .director-content{
     padding: 4px 15px;
 }
-
+.icef{
+    margin-top:20px;
+}
 
 @media (max-width: 1200px) {
     .wrapper.bg {
@@ -124,6 +126,9 @@ body{
     }
      .director-content{
         padding: 15px 15px;
+    }
+    .icef{
+        margin-top:10px;
     }
 }
 
