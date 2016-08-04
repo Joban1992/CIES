@@ -2,7 +2,7 @@
     font-family: circularBook;
     //src: url(../font/CircularStd-Book.otf);
     //src: url(../font/Roboto-Regular.ttf);
-    src: url(../font/FuturaLight.ttf);
+    src: url('webfont.ttf')  format('truetype');
     
 }
 
