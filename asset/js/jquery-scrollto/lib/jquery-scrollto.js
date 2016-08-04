@@ -115,7 +115,7 @@
                             targetOffsetTop = $target.offset().top-90;
                         }else if($target.selector== "#profession"){
                             targetOffsetTop = $target.offset().top-40;
-                        }else if($target.selector== "#ohsc"){
+                        }else if($target.selector== "#oshc"){
                             targetOffsetTop = $target.offset().top-50;
                         }
 			targetOffsetTopAdjusted = targetOffsetTop - startOffsetTop - parseInt(config.offsetTop,10);
