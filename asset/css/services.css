@@ -93,6 +93,7 @@ body{
 .service .description ul{
     padding: 0;
     margin:25px 20px;
+    font-size: .8em;
 }
 .service .description ul li{
     list-style: none;
