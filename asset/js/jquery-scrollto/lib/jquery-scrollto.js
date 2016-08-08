@@ -112,11 +112,11 @@
                         if($target.selector== "#education"){
                             targetOffsetTop = $target.offset().top-100;
                         }else if($target.selector== "#migration"){
-                            targetOffsetTop = $target.offset().top-90;
+                            targetOffsetTop = $target.offset().top-100;
                         }else if($target.selector== "#profession"){
-                            targetOffsetTop = $target.offset().top-40;
+                            targetOffsetTop = $target.offset().top-100;
                         }else if($target.selector== "#oshc"){
-                            targetOffsetTop = $target.offset().top-50;
+                            targetOffsetTop = $target.offset().top-100;
                         }
 			targetOffsetTopAdjusted = targetOffsetTop - startOffsetTop - parseInt(config.offsetTop,10);
 
