@@ -33,18 +33,6 @@ body{
 .hero-block.active .overlay{
     /*background: rgba(0,0,0,0.5)*/
 }
-.hero-block .tab-bar{
-    position: absolute;
-    bottom: 0;
-    height: 0px;
-    background: #00BF71;
-    width: 100%;
-    margin-left: -15px;
-    transition: height 0.2s ease-out;
-}
-.hero-block.active .tab-bar{
-    height: 12px;
-}
 .wrapper .content {
     margin: 0;
     padding: 30px 12px;
@@ -87,6 +75,25 @@ body{
 }
 .icef{
     margin-top:20px;
+}
+.affilation{
+	border-bottom: 1px solid #d8d8d8;
+	font-weight: bolder;
+	background: #EBF1F9;
+	text-align: center;
+}
+.affilation .title{
+	padding:12px 15px;
+	font-size: 1.6em;
+	background: rgba(0, 191, 113, 0.73);
+	color: #fff;
+}
+.affilation .name{
+	font-size: 2em;
+	padding: 20px 15px;
+	//background: rgba(0, 191, 113, 0.82);
+	background: white;
+	color: #fff
 }
 
 @media (max-width: 1200px) {
